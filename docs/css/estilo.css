@@ -1,330 +1,339 @@
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-:root{
-  /* Persistencias necesarias */
-  --blanco: #ffffff;
-  --oscuro: #212121;
-  --oscuroFooter: #2D2A2B;
+:root {
+  /* Paleta Halloween 2026 */
+  --rojoBonito: #EA3346;
+  --rojoHojas: #C20522;
+  --blancoLuna: #F3E4F9;
+  --laguna: #231C3F;
+  --blancoCalabaza: #FADBDF;
+  --violeta: #5D4C7C;
+  --violetaClaro: #966CAB;
+  --nubesOscuras: #231C3D;
+  --niebla: #503E65;
 
-  /* Persistencias no chulas que aún usas en gradientes */
-  --granate: #922B21;
-  --rojo: #B03A2E;
-  --fondo2023claro:#4E3F36;
+  /* Referencias existentes, actualizadas a la paleta 2026 */
+  --blanco: var(--blancoLuna);
+  --oscuro: var(--nubesOscuras);
+  --oscuroFooter: var(--niebla);
 
-  /* Paleta 2025 (Lagunas) */
-  --nubeOscura:#0B2F2A;         /* fondo principal verde petróleo muy oscuro */
-  --nubeClara:#2E1B10;          /* transición cálida oscura */
-  --cuadroIn2025:#745C46;       /* topo/marrón para cajas */
-  --fondoAcordeon2025:#000602;  /* acordeón abierto */
-  --fondoAcordeon20252:#000602; /* acordeón cerrado / fondos neutros */
-  --verde2023:#1C3B36;          /* apoyo frío para footer/gradientes */
-  --posibleFooter2025:#060905;  /* casi negro verdoso */
-  --ojos2025:#EF9A40;           /* naranja calabaza (acentos/CTA) */
-  --luz2025:#DDE6BE;            /* texto sobre oscuro (suave y legible) */
-  --luna2025:#CFE7C8;           /* luna/encabezados (verde pálido) */
+  --granate: var(--rojoHojas);
+  --rojo: var(--rojoBonito);
+  --fondo2023claro: var(--niebla);
 
-  --titulo: #F1EAB6;
+  --nubeOscura: var(--nubesOscuras);
+  --nubeClara: var(--violeta);
+  --cuadroIn2025: var(--niebla);
+  --fondoAcordeon2025: var(--niebla);
+  --fondoAcordeon20252: var(--laguna);
+  --verde2023: var(--violeta);
+  --posibleFooter2025: var(--nubesOscuras);
+  --ojos2025: var(--rojoBonito);
+  --luz2025: var(--blancoCalabaza);
+  --luna2025: var(--blancoLuna);
+
+  --titulo: var(--blancoLuna);
 }
 
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
-.borde{
-    border: 1px solid var(--oscuro);
+body {
+  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+
+  background-color: var(--nubesOscuras);
+
+  background-image:
+    /* Resplandor carmesí desde el lateral izquierdo */
+    radial-gradient(ellipse at 0% 35%,
+      #C2052280 0%,
+      #C2052233 28%,
+      transparent 60%),
+    /* Niebla violeta luminosa desde la derecha */
+    radial-gradient(ellipse at 100% 55%,
+      #966CAB99 0%,
+      #5D4C7C59 32%,
+      transparent 65%),
+    /* Segundo acento rojo en la parte inferior */
+    radial-gradient(ellipse at 75% 100%,
+      #EA334659 0%,
+      transparent 50%),
+    /* Base oscura que separa las zonas de luz */
+    linear-gradient(155deg,
+      var(--nubesOscuras) 0%,
+      var(--laguna) 35%,
+      var(--niebla) 65%,
+      var(--nubesOscuras) 100%);
+
+  background-repeat: no-repeat;
 }
 
-.importante{
-    font-weight: bold;
-    font-size: large;
+.borde {
+  border: 1px solid var(--oscuro);
 }
 
-.centro{
-    text-align: center;
+.importante {
+  font-weight: bold;
+  font-size: large;
 }
 
-.colorAcordeon{
-    background-color: var(--fondoAcordeon20252)!important;
-    color: var(--luna2025)!important;
+.centro {
+  text-align: center;
 }
 
-.colorAcordeonIn{
-    color: var(--luna2025)!important;
-    background-image: linear-gradient(to top, var(--nubeOscura) 0%, var(--fondo2023claro) 100%);
+h1 {
+  text-align: center;
+  color: var(--titulo);
 }
 
-body{
-    font-family: 'Gloria Hallelujah', cursive, sans-serif;
-    background-image: linear-gradient(to top, var(--nubeClara) 0%, var(--nubeOscura) 80%);
+.botones {
+  color: var(--rojo);
+  text-align: center;
 }
 
-h1{
-    text-align: center;
-    color: var(--titulo);
+button {
+  text-align: center !important;
 }
 
-.botones{
-    color: var(--rojo);
-    text-align: center;
+.botonesDescarga {
+  margin-top: 10px;
 }
 
-button{
-    text-align: center!important;
+.portada {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.botonesDescarga{
-    margin-top: 10px;
+/* Marco integrado con la ilustración */
+.portada.img-thumbnail {
+  background-color: var(--nubesOscuras);
+  border-color: var(--violetaClaro);
+
+  box-shadow:
+    0 10px 28px #231C3D99,
+    -5px 0 22px #C2052226,
+    5px 0 22px #966CAB33;
 }
 
-.portada{
-    width: 100%;
-    height: 160px;
-    margin: 0 auto;
+.dropColor {
+  color: var(--blancoLuna) !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  background-image: linear-gradient(to top,
+      var(--granate) 0%,
+      var(--fondoAcordeon20252) 100%);
 }
 
-.dropColor{
-    color: var(--nubeOscura)!important;
-    padding: 0px!important;
-    margin: 0px!important;
-    /* background-color: var(--fondoAcordeon2023); */
-    background-image: linear-gradient(to top, var(--granate) 0%, var(--fondoAcordeon20252) 100%);
+.footer {
+  margin-top: 3px;
+  padding: 12px;
+  text-align: center;
+  background-image: linear-gradient(to top,
+      var(--verde2023) 0%,
+      var(--nubeOscura) 70%);
+  color: var(--luz2025);
+  border-radius: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 6px;
 }
 
-.footer{
-    margin-top: 3px;
-    padding: 12px;
-    text-align: center;
-    /* background-image: linear-gradient(to top, var(--fondoOscuro) 0%, var(--fondo2023Oscuro) 100%); */
-    background-image: linear-gradient(to top, var(--verde2023) 0%, var(--nubeOscura) 70%);
-    color: var(--luz2025);
-    border-radius: 100px;
-    max-width: 100%;
-    max-height: 100%;
-    font-size: 6px;    
+.titulo {
+  text-align: center;
+  font-size: 30px;
+  color: var(--ojos2025) !important;
+  max-width: 100%;
 }
 
-.titulo{
-    text-align: center;
-    font-size: 30px;
-    color: var(--oscuro);
-    max-width: 100%;
+.descripcion,
+span {
+  text-align: center !important;
+  font-size: 18px;
+  color: var(--blanco);
 }
 
-.descripcion, span{
-    text-align: center!important;
-    font-size: 18px;
-    color: var(--blanco);
+/* Tarjetas: base oscura para destacar textos y títulos rojos */
+.cuadro {
+  border: 2px solid;
+  border-color: #966CAB80 !important;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg,
+      var(--nubesOscuras) 0%,
+      var(--laguna) 65%,
+      var(--niebla) 100%) !important;
+  color: var(--luz2025) !important;
 }
 
-.cuadro{
-    border: 2px solid;
-    border-color: var(--oscuroFooter);
-    padding: 10px;
-    border-radius: 10px;
-    /* background-image: linear-gradient(to top, var(--fondoAcordeon2023) 0%, var(--granate) 100%); */
-    background-image: linear-gradient(to top, var(--fondoAcordeon20252) 40%, var(--cuadroIn2025) 80%);
+.cuadro:hover {
+  background-image: linear-gradient(180deg,
+      var(--laguna) 0%,
+      var(--laguna) 65%,
+      var(--violeta) 100%) !important;
+  border-color: var(--violetaClaro) !important;
 }
 
-.mt{
-    margin-top: 100px;
+.mt {
+  margin-top: 100px;
 }
 
-/* Color cuando el acordeón está colapsado (no desplegado) */
-.accordion-button:not(.collapsed)::after {
-    color: var(--posibleFooter2025) !important;
-    transition: color 0.3s ease;
+/* Acordeones */
+.colorAcordeon {
+  background-color: var(--fondoAcordeon20252) !important;
+  color: var(--luna2025) !important;
 }
 
-/* Color cuando el acordeón está desplegado */
+.colorAcordeonIn {
+  color: var(--luna2025) !important;
+  background-image: linear-gradient(to top,
+      var(--nubeOscura) 0%,
+      var(--fondo2023claro) 100%);
+}
+
+.accordion-item {
+  background: transparent !important;
+  border: 1px solid #966CAB66;
+}
+
+/* Día cerrado */
+/* Barras de los días: reflejos laterales y centro oscuro */
+.accordion-button.colorAcordeon {
+  background-color: var(--fondoAcordeon20252) !important;
+
+  background-image:
+    linear-gradient(100deg,
+      #C2052226 0%,
+      transparent 30%,
+      transparent 65%,
+      #966CAB33 100%);
+
+  color: var(--luna2025) !important;
+
+  transition:
+    color .2s ease,
+    background-color .2s ease;
+}
+
+/* Día abierto */
+.accordion-button.colorAcordeon:not(.collapsed) {
+  background-color: var(--fondoAcordeon2025) !important;
+  color: var(--luna2025) !important;
+}
+
+/* Hover y foco: rojo sobre fondo oscuro */
+.accordion-button.colorAcordeon:hover,
+.accordion-button.colorAcordeon:focus,
+.accordion-button.colorAcordeon:not(.collapsed):hover,
+.accordion-button.colorAcordeon:not(.collapsed):focus {
+  background-color: var(--laguna) !important;
+  color: var(--ojos2025) !important;
+}
+
+.accordion-button.colorAcordeon:focus {
+  border-color: var(--violetaClaro);
+  box-shadow: 0 0 0 .25rem #966CAB40;
+}
+
+/*
+ * Flecha del acordeón.
+ * La máscara permite que tome el color real del texto:
+ * blanco normalmente y rojo al pasar el cursor.
+ */
 .accordion-button::after {
-    color: var(--luz2025) !important;
-    transition: color 0.3s ease;
+  background-image: none !important;
+  background-color: currentColor;
+
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 1 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") center / contain no-repeat;
+
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 1 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") center / contain no-repeat;
+
+  transition: transform .2s ease, background-color .2s ease;
 }
 
-/* ===== Ajustes mínimos para que empaste con 2025 sin tocar tamaños ===== */
-.accordion-item{
-    background: transparent !important;
-    border: 1px solid rgba(255,255,255,.06);
-}
-.accordion-button.colorAcordeon:not(.collapsed){
-    background-color: var(--fondoAcordeon2025) !important;
-    color: var(--ojos2025) !important;
-}
-.accordion-body{
-    background-image: linear-gradient(to top, var(--fondoAcordeon20252) 40%, var(--cuadroIn2025) 80%) !important;
-    color: var(--luz2025) !important;
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
 }
 
-/* Iconos visibles con el naranja calabaza */
+/* Interior del día: luces carmesí y niebla violeta */
+.accordion-body {
+  background-color: var(--laguna);
+
+  background-image:
+    /* Luz lunar concentrada en la esquina superior derecha */
+    radial-gradient(ellipse at 100% 0%,
+      #F3E4F933 0%,
+      #966CAB66 18%,
+      transparent 48%),
+    /* Resplandor rojo entrando desde la izquierda */
+    radial-gradient(ellipse at 0% 25%,
+      #C205228C 0%,
+      #C2052226 30%,
+      transparent 60%),
+    /* Niebla violeta en la parte inferior derecha */
+    radial-gradient(ellipse at 100% 85%,
+      #966CAB99 0%,
+      #5D4C7C40 35%,
+      transparent 65%),
+    /* Reflejo carmesí en el borde inferior */
+    radial-gradient(ellipse at 20% 100%,
+      #EA33464D 0%,
+      transparent 45%),
+    /* Textura diagonal muy tenue */
+    repeating-linear-gradient(135deg,
+      #F3E4F906 0 1px,
+      transparent 1px 8px),
+    /* Profundidad: alternancia de sombra y niebla */
+    linear-gradient(145deg,
+      var(--nubesOscuras) 0%,
+      var(--niebla) 32%,
+      var(--laguna) 58%,
+      var(--nubesOscuras) 100%) !important;
+
+  color: var(--luz2025) !important;
+
+  /* Luz en los bordes para enmarcar el interior */
+  box-shadow:
+    inset 0 2px 0 #966CAB99,
+    inset 0 -2px 0 #C2052266;
+}
+
+/* Iconos rojos */
 .icons,
 .icons i,
 .icons .fa,
 .icons .fas,
 .icons .far,
-.icons .fab{
-    color: var(--ojos2025) !important;
-}
-
-/* Media querys*/
-@media (min-width: 768px){
-    .portada{
-        height: 420px;
-    }
-    .footer{
-        font-size: 14px;
-    }
-}
-
-/* Flex */
-.titulo.cuadro {
-    display: flex;
-    flex-direction: column;
-}
-
-/* .titulo.cuadro > *:not(:last-child) {
-    flex-grow: 1;
-} */
-
-.titulo.cuadro > *:last-child {
-    margin-top: auto;
-}
-
-.icons {
-    color: var(--ojos2025);
-}
-
-/* Estado base (cerrado): verde + fondo oscuro */
-.accordion-button.colorAcordeon{
-  background-color: var(--fondoAcordeon20252) !important;
-  color: var(--luna2025) !important;
-  transition: color .2s ease, background-color .2s ease;
-}
-
-/* Estado abierto: sigue verde, fondo un poco distinto */
-.accordion-button.colorAcordeon:not(.collapsed){
-  background-color: var(--fondoAcordeon2025) !important;
-  color: var(--luna2025) !important;
-}
-
-/* Hover (tanto abierto como cerrado): cambia a ojos2025 */
-.accordion-button.colorAcordeon:hover,
-.accordion-button.colorAcordeon:focus,
-.accordion-button.colorAcordeon:not(.collapsed):hover,
-.accordion-button.colorAcordeon:not(.collapsed):focus{
+.icons .fab {
   color: var(--ojos2025) !important;
 }
 
-/* Chevron del acordeón con el mismo color del texto (currentColor) */
-.accordion-button::after{
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='currentColor'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 1 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-  transition: transform .2s ease, color .2s ease;
+/* Separadores en blanco lunar translúcido */
+hr.borde {
+  border-color: #F3E4F929 !important;
 }
 
-/* Rotación del chevron al abrir/cerrar (opcional, no cambia tamaños) */
-.accordion-button:not(.collapsed)::after{
-  transform: rotate(180deg);
+/* Distribución de las tarjetas */
+.titulo.cuadro {
+  display: flex;
+  flex-direction: column;
+  color: var(--ojos2025) !important;
 }
 
-/* ===== Fondo interior al abrir (más contraste, verde azulado; sin marrones) */
-.accordion-body{
-  /* halo sutil arriba para separar del fondo general */
-  background-image:
-    radial-gradient(120% 60% at 50% -20%, rgba(207,231,200,.12), rgba(207,231,200,0) 60%),
-    linear-gradient(to bottom, #081E1A 0%, #0F2E28 55%, #163C34 100%) !important;
-  color: var(--luz2025) !important;
+.titulo.cuadro>*:last-child {
+  margin-top: auto;
 }
 
-/* ===== Cards de película (se leen y “se recortan” mejor) */
-.cuadro{
-  background-image:
-    linear-gradient(180deg, #121F1C 0%, #152924 35%, #1B3A33 100%) !important;
-  border-color: rgba(207,231,200,.18) !important;  /* borde frío (luna2025 suave) */
-  color: var(--luz2025) !important;
+/* Tamaños originales */
+@media (min-width: 768px) {
+  .footer {
+    font-size: 14px;
+  }
 }
-
-/* Título dentro de la card: un pelín más luminoso */
-.titulo.cuadro{
-  color: var(--luna2025) !important;  /* #CFE7C8 */
-}
-
-/* Separadores afinados a los nuevos fondos */
-hr.borde{
-  border-color: rgba(207,231,200,.16) !important;
-}
-
-/* (Opcional, sin cambiar tamaños) feedback visual leve al pasar por cada card */
-.cuadro:hover{
-  background-image:
-    linear-gradient(180deg, #162821 0%, #1A312B 35%, #21433B 100%) !important;
-  border-color: rgba(207,231,200,.28) !important;
-}
-
-/* 1) Fondo global: misma parte de arriba, fondo inferior más verde (#01140E) */
-:root{
-  --nubeClara:#01140E; /* sustituye el marrón de abajo por este verde muy oscuro */
-}
-body{
-  background-image: linear-gradient(to top, var(--nubeClara) 0%, var(--nubeOscura) 80%);
-}
-
-/* 2) Títulos de las películas en ojos2025 (sin tocar el H1) */
-.titulo,
-.titulo.cuadro{
-  color: var(--ojos2025) !important; /* #EF9A40 */
-}
-
-/* 3) Día abierto (accordion-body): más contraste y “un poco loco” sin sacar del cine */
-.accordion-body{
-  /* Neblina suave verdosa y destellos naranjas muy sutiles + gradiente frío */
-  background-image:
-    radial-gradient(60% 40% at 80% -10%, rgba(207,231,200,.12), rgba(207,231,200,0) 60%),
-    radial-gradient(55% 35% at 10% 110%, rgba(239,154,64,.10), rgba(239,154,64,0) 60%),
-    linear-gradient(to bottom, #061A16 0%, #0E2D26 55%, #13423A 100%),
-    repeating-linear-gradient(135deg, rgba(239,154,64,.05) 0 2px, rgba(239,154,64,0) 2px 8px);
-  color: var(--luz2025) !important;
-}
-
-/* 4) Cards de película: se recortan mejor sobre el body abierto */
-.cuadro{
-  background-image: linear-gradient(180deg, #0D221D 0%, #11332B 45%, #173F37 100%) !important;
-  border-color: rgba(239,154,64,.25) !important; /* línea acorde con ojos2025 */
-  color: var(--luz2025) !important;
-}
-
-/* (opcional suave) ligerísimo realce al pasar por cada card */
-.cuadro:hover{
-  background-image: linear-gradient(180deg, #102923 0%, #163830 45%, #1C4A41 100%) !important;
-  border-color: rgba(239,154,64,.35) !important;
-}
-
-/* Separadores afinados al nuevo fondo */
-hr.borde{ border-color: rgba(207,231,200,.16) !important; }
-
-/* Día abierto: base verde-azulada + pizca de ojos2025 para luz/estilo */
-.accordion-body{
-  background-image:
-    /* halo cálido muy suave arriba */
-    linear-gradient(to bottom, #EF9A4014 0%, #EF9A4000 30%),
-    /* destello leve en esquina superior izq */
-    radial-gradient(55% 35% at 15% -10%, #EF9A400D 0%, transparent 60%),
-    /* destello leve en esquina inferior der */
-    radial-gradient(45% 30% at 85% 110%, #EF9A400A 0%, transparent 60%),
-    /* textura finísima (apenas visible) para romper bloque uniforme */
-    repeating-linear-gradient(135deg, #EF9A4008 0 1px, transparent 1px 7px),
-    /* base fría de laguna (más profunda, menos “verde fosforito”) */
-    linear-gradient(to bottom, #071813 0%, #0D2822 52%, #123730 100%) !important;
-  color: var(--luz2025) !important;
-}
-
-/* Títulos de película ya en ojos2025, mantenemos la legibilidad */
-.titulo,
-.titulo.cuadro{
-  color: var(--ojos2025) !important; /* #EF9A40 */
-}
-
-
-
-
-
