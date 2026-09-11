@@ -1,0 +1,330 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root{
+  /* Persistencias necesarias */
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --oscuroFooter: #2D2A2B;
+
+  /* Persistencias no chulas que aún usas en gradientes */
+  --granate: #922B21;
+  --rojo: #B03A2E;
+  --fondo2023claro:#4E3F36;
+
+  /* Paleta 2025 (Lagunas) */
+  --nubeOscura:#0B2F2A;         /* fondo principal verde petróleo muy oscuro */
+  --nubeClara:#2E1B10;          /* transición cálida oscura */
+  --cuadroIn2025:#745C46;       /* topo/marrón para cajas */
+  --fondoAcordeon2025:#000602;  /* acordeón abierto */
+  --fondoAcordeon20252:#000602; /* acordeón cerrado / fondos neutros */
+  --verde2023:#1C3B36;          /* apoyo frío para footer/gradientes */
+  --posibleFooter2025:#060905;  /* casi negro verdoso */
+  --ojos2025:#EF9A40;           /* naranja calabaza (acentos/CTA) */
+  --luz2025:#DDE6BE;            /* texto sobre oscuro (suave y legible) */
+  --luna2025:#CFE7C8;           /* luna/encabezados (verde pálido) */
+
+  --titulo: #F1EAB6;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.borde{
+    border: 1px solid var(--oscuro);
+}
+
+.importante{
+    font-weight: bold;
+    font-size: large;
+}
+
+.centro{
+    text-align: center;
+}
+
+.colorAcordeon{
+    background-color: var(--fondoAcordeon20252)!important;
+    color: var(--luna2025)!important;
+}
+
+.colorAcordeonIn{
+    color: var(--luna2025)!important;
+    background-image: linear-gradient(to top, var(--nubeOscura) 0%, var(--fondo2023claro) 100%);
+}
+
+body{
+    font-family: 'Gloria Hallelujah', cursive, sans-serif;
+    background-image: linear-gradient(to top, var(--nubeClara) 0%, var(--nubeOscura) 80%);
+}
+
+h1{
+    text-align: center;
+    color: var(--titulo);
+}
+
+.botones{
+    color: var(--rojo);
+    text-align: center;
+}
+
+button{
+    text-align: center!important;
+}
+
+.botonesDescarga{
+    margin-top: 10px;
+}
+
+.portada{
+    width: 100%;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.dropColor{
+    color: var(--nubeOscura)!important;
+    padding: 0px!important;
+    margin: 0px!important;
+    /* background-color: var(--fondoAcordeon2023); */
+    background-image: linear-gradient(to top, var(--granate) 0%, var(--fondoAcordeon20252) 100%);
+}
+
+.footer{
+    margin-top: 3px;
+    padding: 12px;
+    text-align: center;
+    /* background-image: linear-gradient(to top, var(--fondoOscuro) 0%, var(--fondo2023Oscuro) 100%); */
+    background-image: linear-gradient(to top, var(--verde2023) 0%, var(--nubeOscura) 70%);
+    color: var(--luz2025);
+    border-radius: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 6px;    
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: var(--oscuro);
+    max-width: 100%;
+}
+
+.descripcion, span{
+    text-align: center!important;
+    font-size: 18px;
+    color: var(--blanco);
+}
+
+.cuadro{
+    border: 2px solid;
+    border-color: var(--oscuroFooter);
+    padding: 10px;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to top, var(--fondoAcordeon2023) 0%, var(--granate) 100%); */
+    background-image: linear-gradient(to top, var(--fondoAcordeon20252) 40%, var(--cuadroIn2025) 80%);
+}
+
+.mt{
+    margin-top: 100px;
+}
+
+/* Color cuando el acordeón está colapsado (no desplegado) */
+.accordion-button:not(.collapsed)::after {
+    color: var(--posibleFooter2025) !important;
+    transition: color 0.3s ease;
+}
+
+/* Color cuando el acordeón está desplegado */
+.accordion-button::after {
+    color: var(--luz2025) !important;
+    transition: color 0.3s ease;
+}
+
+/* ===== Ajustes mínimos para que empaste con 2025 sin tocar tamaños ===== */
+.accordion-item{
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,.06);
+}
+.accordion-button.colorAcordeon:not(.collapsed){
+    background-color: var(--fondoAcordeon2025) !important;
+    color: var(--ojos2025) !important;
+}
+.accordion-body{
+    background-image: linear-gradient(to top, var(--fondoAcordeon20252) 40%, var(--cuadroIn2025) 80%) !important;
+    color: var(--luz2025) !important;
+}
+
+/* Iconos visibles con el naranja calabaza */
+.icons,
+.icons i,
+.icons .fa,
+.icons .fas,
+.icons .far,
+.icons .fab{
+    color: var(--ojos2025) !important;
+}
+
+/* Media querys*/
+@media (min-width: 768px){
+    .portada{
+        height: 420px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+
+/* Flex */
+.titulo.cuadro {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .titulo.cuadro > *:not(:last-child) {
+    flex-grow: 1;
+} */
+
+.titulo.cuadro > *:last-child {
+    margin-top: auto;
+}
+
+.icons {
+    color: var(--ojos2025);
+}
+
+/* Estado base (cerrado): verde + fondo oscuro */
+.accordion-button.colorAcordeon{
+  background-color: var(--fondoAcordeon20252) !important;
+  color: var(--luna2025) !important;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+/* Estado abierto: sigue verde, fondo un poco distinto */
+.accordion-button.colorAcordeon:not(.collapsed){
+  background-color: var(--fondoAcordeon2025) !important;
+  color: var(--luna2025) !important;
+}
+
+/* Hover (tanto abierto como cerrado): cambia a ojos2025 */
+.accordion-button.colorAcordeon:hover,
+.accordion-button.colorAcordeon:focus,
+.accordion-button.colorAcordeon:not(.collapsed):hover,
+.accordion-button.colorAcordeon:not(.collapsed):focus{
+  color: var(--ojos2025) !important;
+}
+
+/* Chevron del acordeón con el mismo color del texto (currentColor) */
+.accordion-button::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='currentColor'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 1 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  transition: transform .2s ease, color .2s ease;
+}
+
+/* Rotación del chevron al abrir/cerrar (opcional, no cambia tamaños) */
+.accordion-button:not(.collapsed)::after{
+  transform: rotate(180deg);
+}
+
+/* ===== Fondo interior al abrir (más contraste, verde azulado; sin marrones) */
+.accordion-body{
+  /* halo sutil arriba para separar del fondo general */
+  background-image:
+    radial-gradient(120% 60% at 50% -20%, rgba(207,231,200,.12), rgba(207,231,200,0) 60%),
+    linear-gradient(to bottom, #081E1A 0%, #0F2E28 55%, #163C34 100%) !important;
+  color: var(--luz2025) !important;
+}
+
+/* ===== Cards de película (se leen y “se recortan” mejor) */
+.cuadro{
+  background-image:
+    linear-gradient(180deg, #121F1C 0%, #152924 35%, #1B3A33 100%) !important;
+  border-color: rgba(207,231,200,.18) !important;  /* borde frío (luna2025 suave) */
+  color: var(--luz2025) !important;
+}
+
+/* Título dentro de la card: un pelín más luminoso */
+.titulo.cuadro{
+  color: var(--luna2025) !important;  /* #CFE7C8 */
+}
+
+/* Separadores afinados a los nuevos fondos */
+hr.borde{
+  border-color: rgba(207,231,200,.16) !important;
+}
+
+/* (Opcional, sin cambiar tamaños) feedback visual leve al pasar por cada card */
+.cuadro:hover{
+  background-image:
+    linear-gradient(180deg, #162821 0%, #1A312B 35%, #21433B 100%) !important;
+  border-color: rgba(207,231,200,.28) !important;
+}
+
+/* 1) Fondo global: misma parte de arriba, fondo inferior más verde (#01140E) */
+:root{
+  --nubeClara:#01140E; /* sustituye el marrón de abajo por este verde muy oscuro */
+}
+body{
+  background-image: linear-gradient(to top, var(--nubeClara) 0%, var(--nubeOscura) 80%);
+}
+
+/* 2) Títulos de las películas en ojos2025 (sin tocar el H1) */
+.titulo,
+.titulo.cuadro{
+  color: var(--ojos2025) !important; /* #EF9A40 */
+}
+
+/* 3) Día abierto (accordion-body): más contraste y “un poco loco” sin sacar del cine */
+.accordion-body{
+  /* Neblina suave verdosa y destellos naranjas muy sutiles + gradiente frío */
+  background-image:
+    radial-gradient(60% 40% at 80% -10%, rgba(207,231,200,.12), rgba(207,231,200,0) 60%),
+    radial-gradient(55% 35% at 10% 110%, rgba(239,154,64,.10), rgba(239,154,64,0) 60%),
+    linear-gradient(to bottom, #061A16 0%, #0E2D26 55%, #13423A 100%),
+    repeating-linear-gradient(135deg, rgba(239,154,64,.05) 0 2px, rgba(239,154,64,0) 2px 8px);
+  color: var(--luz2025) !important;
+}
+
+/* 4) Cards de película: se recortan mejor sobre el body abierto */
+.cuadro{
+  background-image: linear-gradient(180deg, #0D221D 0%, #11332B 45%, #173F37 100%) !important;
+  border-color: rgba(239,154,64,.25) !important; /* línea acorde con ojos2025 */
+  color: var(--luz2025) !important;
+}
+
+/* (opcional suave) ligerísimo realce al pasar por cada card */
+.cuadro:hover{
+  background-image: linear-gradient(180deg, #102923 0%, #163830 45%, #1C4A41 100%) !important;
+  border-color: rgba(239,154,64,.35) !important;
+}
+
+/* Separadores afinados al nuevo fondo */
+hr.borde{ border-color: rgba(207,231,200,.16) !important; }
+
+/* Día abierto: base verde-azulada + pizca de ojos2025 para luz/estilo */
+.accordion-body{
+  background-image:
+    /* halo cálido muy suave arriba */
+    linear-gradient(to bottom, #EF9A4014 0%, #EF9A4000 30%),
+    /* destello leve en esquina superior izq */
+    radial-gradient(55% 35% at 15% -10%, #EF9A400D 0%, transparent 60%),
+    /* destello leve en esquina inferior der */
+    radial-gradient(45% 30% at 85% 110%, #EF9A400A 0%, transparent 60%),
+    /* textura finísima (apenas visible) para romper bloque uniforme */
+    repeating-linear-gradient(135deg, #EF9A4008 0 1px, transparent 1px 7px),
+    /* base fría de laguna (más profunda, menos “verde fosforito”) */
+    linear-gradient(to bottom, #071813 0%, #0D2822 52%, #123730 100%) !important;
+  color: var(--luz2025) !important;
+}
+
+/* Títulos de película ya en ojos2025, mantenemos la legibilidad */
+.titulo,
+.titulo.cuadro{
+  color: var(--ojos2025) !important; /* #EF9A40 */
+}
+
+
+
+
+
