@@ -10,30 +10,30 @@ POSIBLES:
 -	5º Send Help; [SEGURA] p
 -	6º Exit 8; [SEGURA] p
 -	7º La momia de Lee Cronin; [SEGURA] p
--	8º Mother of Flies; [SEGURA]
+-	8º Mother of Flies; [SEGURA] p
 -	9º Undertone: Frecuencia maldita; [SEGURA] p
 -	10º La larga marcha; [SEGURA] p
 -	11º Noche de bodas 2; [SEGURA] p
--	12º V/H/S/Halloween; [SEGURA]
+-	12º V/H/S/Halloween; [SEGURA] p
 -	13º Scream 7; [SEGURA] p
 -   14º Good Boy; [SEGURA] p
 
--	15º Colony;
--	16º Faces of Death;
--	17º Honey Bunch;
+-	15º Colony; p
+-	16º Faces of Death; p
+-	17º Honey Bunch; p
 -	18º El final de Oak Street; p
 -	19º Mārama; ¿? p
--	20º Leviticus;
+-	20º Leviticus; p
 -	21º Resident Evil;
--	22º Goody Goody;
+-	22º Goody Goody; p
 -	23º Never After Dark;
--	24º Bloody Tennis;
+-	24º Bloody Tennis; p
 -	25º Victorian Psycho;
 -	26º Appofeniacs;
--	27º Infirmary;
+-	27º Infirmary; p
 -	28º Beware Boiúna;
--	29º Las motosierras cantan (Chainsaws Were Singing);
--	30º The Severed Sun;
+-	29º Las motosierras cantan (Chainsaws Were Singing); p
+-	30º The Severed Sun; p
 -	31º Frogman;
 -	32º Frogman Returns;
 -	33º VFW; p
@@ -118,18 +118,21 @@ Ya Deberian:
 
 1º Backrooms; 14 julio 2026 (Streaming/VOD) p 
 2º Hokum; 2 junio 2026 (Streaming/VOD) p
-3º Mother of Flies; 23 enero 2026 (Shudder)
-4º V/H/S/Halloween; 3 octubre 2025 (Shudder)
-5º Colony; 28 septiembre 2026 (Digital + DVD/Blu-ray/4K, Reino Unido)
-6º Faces of Death; 12 mayo 2026 (Streaming/VOD)
-7º Honey Bunch; 13 febrero 2026 (Shudder)
+3º Mother of Flies; 23 enero 2026 (Shudder) p
+4º V/H/S/Halloween; 3 octubre 2025 (Shudder) p
+5º Colony; 28 septiembre 2026 (Digital + DVD/Blu-ray/4K, Reino Unido) p
+6º Faces of Death; 12 mayo 2026 (Streaming/VOD) p
+7º Honey Bunch; 13 febrero 2026 (Shudder) p
 8º El final de Oak Street; 15 septiembre 2026 (Digital) p
-9º Leviticus; 28 julio 2026 (Streaming)
-10º Goody Goody; 18 septiembre 2026 (Shudder)
-11º Bloody Tennis; 25 septiembre 2026 (Shudder)
-12º Infirmary; 2 octubre 2026 (Shudder)
-13º Las motosierras cantan (Chainsaws Were Singing); 24 abril 2026 (Shadowz)
-14º The Severed Sun; 16 mayo 2025 (Streaming/VOD)
+9º Leviticus; 28 julio 2026 (Streaming) p
+10º Goody Goody; 18 septiembre 2026 (Shudder) p
+11º Bloody Tennis; 25 septiembre 2026 (Shudder) p
+12º Infirmary; 2 octubre 2026 (Shudder) p
+https://yts.proxyninja.org/movies/infirmary-2026
+https://www.opensubtitles.org/en/search/sublanguageid-all/idmovie-2608708
+https://www.subtitlecat.com/subs/1687/Goody.Goody.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-CHORTLE.html
+13º Las motosierras cantan (Chainsaws Were Singing); 24 abril 2026 (Shadowz) p
+14º The Severed Sun; 16 mayo 2025 (Streaming/VOD) p
 15º Frogman; 8 marzo 2024 (VOD)
 16º Penny Lane Is Dead; 28 agosto 2026 (Shudder/AMC+)
 17º Queens of the Dead; 11 noviembre 2025 (Streaming/VOD)
