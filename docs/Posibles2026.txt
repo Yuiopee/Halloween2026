@@ -24,50 +24,196 @@ POSIBLES:
 -	18º El final de Oak Street; p
 -	19º Mārama; ¿? p
 -	20º Leviticus; p
--	21º Resident Evil;
+-	21º Resident Evil; f
 -	22º Goody Goody; p
--	23º Never After Dark;
+-	23º Never After Dark; s
 -	24º Bloody Tennis; p
--	25º Victorian Psycho;
--	26º Appofeniacs;
+-	25º Victorian Psycho; s
+-	26º Appofeniacs; s
 -	27º Infirmary; p
--	28º Beware Boiúna;
+-	28º Beware Boiúna; s
 -	29º Las motosierras cantan (Chainsaws Were Singing); p
 -	30º The Severed Sun; p
--	31º Frogman;
--	32º Frogman Returns;
+-	31º Frogman; f
+-	32º Frogman Returns; f
 -	33º VFW; p
--   34º Penny Lane Is Dead;
--   35º Buddy;
+-   34º Penny Lane Is Dead; p
+-   35º Buddy; p
 -   36º Cold Storage; p
--   37º Queens of the Dead;
--   38º Parasomnia;
--   39º Gator Face;
+-   37º Queens of the Dead; p
+-   38º Parasomnia; p
+-   39º Gator Face; p
 -   40º Black Phone 2; [SEGURA] p
--   41º The Depths;
+-   41º The Depths; f
 -   42º DeathGasm; p
--   43º Deathgasm II: Goremageddon;
--   44º Fall 2: Deadpoint;
--   45º Hellbilly Hollow;
--   46º V/H/S/Mixtape;
+-   43º Deathgasm II: Goremageddon; P
+-   44º Fall 2: Deadpoint; p
+-   45º Hellbilly Hollow; s
+-   46º V/H/S/Mixtape; p
 -   47º Re-Animator; p
 -   48º Bride of Re-Animator; p
 -   49º Beyond Re-Animator; p
--   50º Insidious: Fuera del más allá;
--   51º It Ends;
--   52º The Influencer Project;
--   53º Don't Move;
--   54º Ghost in the Cell;
--   55º La otra madre;
--   56º Teenage Sex and Death at Camp Miasma;
+-   50º Insidious: Fuera del más allá; p
+-   51º It Ends; p
+-   52º The Influencer Project; f
+-   53º Don't Move; p
+-   54º Ghost in the Cell; p
+-   55º La otra madre; f
+-   56º Teenage Sex and Death at Camp Miasma; p
 -   57º Gaua; p
 -   58º La plaga; p
--   59º Insaciable;
+-   59º Insaciable; p
 -   60º Te van a matar; p
--   61º La sonrisa del mal;
+-   61º La sonrisa del mal; f
 -   62º Redux Redux; p
--   63º Las malditas (Dollhouse);
+-   63º Las malditas (Dollhouse); p
 -   64º Primate; p
+```
+
+
+
+
+Definitiva:
+
+```
+-	1º Obsession; [SEGURA]
+-	2º Backrooms; [SEGURA]
+-	3º Hokum; [SEGURA]
+-	4º Posesión infernal: En llamas (Evil Dead Burn); [SEGURA]
+-	5º Send Help; [SEGURA]
+-	6º Exit 8;
+-	7º La momia de Lee Cronin; [SEGURA]
+-	8º Mother of Flies;
+-	9º Undertone: Frecuencia maldita;
+-	10º La larga marcha;
+-	11º Noche de bodas 2; [SEGURA]
+-	12º V/H/S/Halloween;
+-	13º Scream 7; [SEGURA]
+-   14º Good Boy; [SEGURA]
+-	15º Colony;
+-	16º Faces of Death;
+-	17º Honey Bunch;
+-	18º El final de Oak Street; [SEGURA]
+-	19º Mārama;
+-	20º Leviticus;
+-	21º Goody Goody;
+-	22º Bloody Tennis;
+-	23º Infirmary;
+-	24º Las motosierras cantan (Chainsaws Were Singing);
+-	25º The Severed Sun;
+-	26º VFW;
+-   27º Penny Lane Is Dead;
+-   28º Buddy;
+-   29º Cold Storage;
+-   30º Queens of the Dead;
+-   31º Parasomnia;
+-   32º Gator Face;
+-   33º Black Phone 2; [SEGURA]
+-   34º DeathGasm; [SEGURA]
+-   35º Deathgasm II: Goremageddon; [SEGURA]
+-   36º Fall 2: Deadpoint;
+-   37º V/H/S/Mixtape;
+-   38º Re-Animator; [SEGURA]
+-   39º Bride of Re-Animator; [SEGURA]
+-   40º Beyond Re-Animator; [SEGURA]
+-   41º Insidious: Fuera del más allá; [SEGURA]
+-   42º It Ends;
+-   43º Don't Move;
+-   44º Ghost in the Cell;
+-   45º Teenage Sex and Death at Camp Miasma;
+-   46º Gaua;
+-   47º La plaga;
+-   48º Insaciable;
+-   49º Te van a matar;
+-   50º Redux Redux;
+-   51º Las malditas (Dollhouse);
+-   52º Primate;
+-   53º The Cursed;
+-   54º M.O.M. Mothers of Monsters
+-   55º The Lost Footage of Leah Sullivan
+```
+
+Definitiva Borrando:
+
+```
+```
+
+ORDEN:
+
+```
+PARA ABRIR BOCA:
+
+    -   Don't Move
+    -   Fall 2: Deadpoint
+    -   V/H/S/Mixtape
+    -   Infirmary
+    -   Redux Redux
+    -   Gator Face
+    -   Goody Goody
+    -   Bloody Tennis
+    -   Parasomnia
+    -   Mārama
+    -   Primate
+    -   The Severed Sun
+    -   La larga marcha
+    -   Colony
+    -   Cold Storage
+    -   Insaciable
+    -   Faces of Death
+    -   Penny Lane Is Dead
+    -   Teenage Sex and Death at Camp Miasma
+
+
+MIÉRCOLES:
+
+    -   Undertone: Frecuencia maldita
+    -   V/H/S/Halloween
+    -   Re-Animator
+    -   Noche de bodas 2
+    -   Scream 7
+    -   Black Phone 2
+    -   Posesión infernal: En llamas
+
+JUEVES:
+
+    -   The Cursed
+    -   El final de Oak Street
+    -   La momia de Lee Cronin
+    -   Bride of Re-Animator
+    -   Good Boy
+    -   Insidious: Fuera del más allá
+    -   The Lost Footage of Leah Sullivan
+
+VIERNES:
+
+    -   Beyond Re-Animator
+    -   Send Help
+    -   Ghost in the Cell
+    -   Te van a matar
+    -   Honey Bunch
+    -   It Ends
+    -   Backrooms
+
+SÁBADO:
+
+    -   Gaua
+    -   Mother of Flies
+    -   VFW
+    -   Queens of the Dead
+    -   Las motosierras cantan (Chainsaws Were Singing);
+    -   DeathGasm
+    -   Deathgasm II: Goremageddon
+
+DOMINGO:
+
+    -   Buddy
+    -   Exit 8
+    -   Las malditas (Dollhouse)
+    -   La plaga
+    -   M.O.M. Mothers of Monsters
+    -   Leviticus
+    -   Hokum
+    -   Obsession
 ```
 
 LAS QUE FALTAN:
@@ -133,17 +279,17 @@ https://www.opensubtitles.org/en/search/sublanguageid-all/idmovie-2608708
 https://www.subtitlecat.com/subs/1687/Goody.Goody.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-CHORTLE.html
 13º Las motosierras cantan (Chainsaws Were Singing); 24 abril 2026 (Shadowz) p
 14º The Severed Sun; 16 mayo 2025 (Streaming/VOD) p
-15º Frogman; 8 marzo 2024 (VOD)
-16º Penny Lane Is Dead; 28 agosto 2026 (Shudder/AMC+)
-17º Queens of the Dead; 11 noviembre 2025 (Streaming/VOD)
-18º Parasomnia; 4 septiembre 2026 (Shudder)
-19º Gator Face; 15 septiembre 2026 (Digital/VOD)
-20º The Depths; 18 septiembre 2026 (VOD)
-21º It Ends; 15 septiembre 2026 (Streaming/VOD)
-22º Teenage Sex and Death at Camp Miasma; 2 octubre 2026 (MUBI)
-23º Insaciable (Saccharine); 24 julio 2026 (Shudder)
-24º La sonrisa del mal; 10 junio 2026 (Movistar Plus+/VOD)
-25º Las malditas (Dollhouse); 12 mayo 2026 (Movistar Plus+)
+15º Frogman; 8 marzo 2024 (VOD) f
+16º Penny Lane Is Dead; 28 agosto 2026 (Shudder/AMC+) p
+17º Queens of the Dead; 11 noviembre 2025 (Streaming/VOD) p
+18º Parasomnia; 4 septiembre 2026 (Shudder) p
+19º Gator Face; 15 septiembre 2026 (Digital/VOD) p
+20º The Depths; 18 septiembre 2026 (VOD) f
+21º It Ends; 15 septiembre 2026 (Streaming/VOD) p
+22º Teenage Sex and Death at Camp Miasma; 2 octubre 2026 (MUBI) p
+23º Insaciable (Saccharine); 24 julio 2026 (Shudder) p
+24º La sonrisa del mal; 10 junio 2026 (Movistar Plus+/VOD) f
+25º Las malditas (Dollhouse); 12 mayo 2026 (Movistar Plus+) p
 
 Faltan:
 
@@ -170,11 +316,10 @@ CREEPY MONSTER:
 * 1º Daddy's Head;
 * 2º Sweetheart;
 * 3º The Hallow;
-* 4º The Cursed;
 
-MOCKUMENTARY / FOUND FOOTAGE:
-* 1º M.O.M.: Mothers of Monsters;
-* 2º The Lost Footage of Leah Sullivan;
+GORE / POSESIÓN: 
+Traumatika; 
+Above the Knee.
 
 NOTAS:
 * Frogman + Frogman Returns van juntas.
@@ -243,32 +388,6 @@ Halloween 2026
 ```
 
 TORRENTS:
-
-ORDEN:
-
-```
-PARA ABRIR BOCA:
-
-
-
-MIÉRCOLES:
-
-
-
-JUEVES:
-
-
-
-VIERNES:
-
-
-
-SÁBADO:
-
-
-
-DOMINGO:
-```
 
 
 LAS QUE NO CONTARÍA PARA HALLOWEEN 2026 POR DISPONIBILIDAD:
